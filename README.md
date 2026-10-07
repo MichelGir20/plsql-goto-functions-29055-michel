@@ -2,7 +2,7 @@
 
 **Course:** Database Development with PL/SQL (INSY 8311)
 **Instructor:** Eric Maniraguha
-**Student:** <FULL NAME> | **Student ID:** <STUDENT ID> | **Group:** <GROUP>
+**Student:** Michel GIRINSHUTI | **Student ID:** 29055 | **Group:** C
 **Deadline:** Thursday, 8 October 2026, 11:59 PM
 
 ## 1. Overview
@@ -16,7 +16,7 @@ All scripts use two tables: `departments` and `employees` (monthly salaries in R
 
 ## 2. Repository Structure
 ```
-plsql-goto-functions-<studentID>-<firstname>/
+plsql-goto-functions-29055-michel/
 ├── README.md
 ├── .gitignore
 ├── 00_setup/create_tables.sql
@@ -72,6 +72,5 @@ Use Oracle SQL Developer, SQL*Plus or Live SQL. Run from the repository root.
 | `C1_output.png` | Payroll validator results |
 
 ## 6. Notes (AI Assistance Disclosure)
-I used an AI assistant (Claude by Anthropic) to help draft the SQL scripts and the documentation for this assignment, as permitted by the assignment's Academic Integrity policy. I then ran the scripts myself in Oracle, reviewed and tested every function, took the screenshots from my own runs, and wrote my reflection in my own words. I understand the code and can explain it.
+I used an AI assistant (Claude by Anthropic, ChatGPT by OpenAI) to help draft the documentation for this assignment, add comments to my code for readability and debug any error I encountered doing this assignment, as permitted by the assignment's Academic Integrity policy. I ran the scripts myself in SQL Developer, reviewed and tested every function, took the screenshots from my own runs, and wrote my reflection in my own words.
 
-<!-- STUDENT: edit the paragraph above so it truthfully describes what YOU did. -->
