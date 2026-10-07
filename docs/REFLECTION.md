@@ -23,7 +23,7 @@ In C1, a single `GOTO invalid_payroll` exit label avoided repeating the "return 
 Functions can appear in SELECT, WHERE, GROUP BY and ORDER BY. Because a function that queries a table runs once per row, it can be slow on large tables, and a function called from SQL should not perform DML. `fn_calculate_tax` does no table access, so I marked it `DETERMINISTIC`.
 
 ## 5. Challenges
-###1. Tablespace quota issue (ORA-01950)
+1. Tablespace quota issue (ORA-01950)
 This was the most serious technical roadblock:
 
 My user MICHEL_PLSQLAUCA_29055 had its default tablespace set to SYSTEM
@@ -38,13 +38,15 @@ ALTER USER ... QUOTA UNLIMITED ON USERS
 ALTER USER ... DEFAULT TABLESPACE USERS
 Dropping empty tables and re-running setup
 
-###2. The ORA-03405: End of query reached error
+2. The ORA-03405: End of query reached error
 Caused by inline -- comments at the end of INSERT statements
 SQL*Plus @ script parser choked on them
+
 Fix: moved comments to their own lines above the INSERTs
 
-###3. GOTO statement semantics
-The A2 code had a structural problem where GOTO jumps inside the loop weren't producing output
+3. GOTO statement semantics
+   
+The A2 code had a structural problem where GOTO jumps inside the loop weren't producing output.
 I had to iterate on the logic and restructure the GOTO structure so it actually executed
 I learned that GOTO can't jump into an IF block or a loop body — only out of one
 ## 6. How I would improve this
