@@ -1,6 +1,6 @@
 # C2 - Reflection
 
-**Student:** <FULL NAME> | **ID:** <STUDENT ID>
+**Student:** <Michel GIRINSHUTI> | **ID:** <29055>
 
 > DRAFT: rewrite this in your own words and replace the generic parts with what you actually experienced.
 
