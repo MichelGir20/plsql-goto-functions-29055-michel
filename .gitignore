@@ -1,0 +1,11 @@
+# OS / editor files
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
+# Oracle / tool artefacts
+*.log
+*.lst
+*.bak
+*.tmp
